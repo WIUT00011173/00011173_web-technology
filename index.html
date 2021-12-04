@@ -5,22 +5,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+        <script src="app.js"></script>
+        <title>Personal Website</title>
 </head>
 <body>
     <div class="home-container">
         <header>
         <h1>FayzKhan_<span style="color: blueviolet;">Dev</span></h1>
         <nav>
-
             <a href="#">Home</a>
             <a href="#About-container">About</a>
             <a href="#skills">Skills</a>
             <a href="#services">Sevices</a>
             <a href="#">Hire Me</a>
-
         </nav>
-
+        <img class="menu-icon" src="./imges/manu-icon.png" alt="">
         </header>
 
         <main>
@@ -108,10 +107,52 @@
         </div>
     </article>
 
-    <form class="registration-form">
-        <h1>Send me Message</h1>
-        <p>Please, fill the form to contact me</p>
-        <input type="text">
-    </form>
+    <!-- contact section -->
+
+    <section class="contact" id="cantact">
+        <h1>Contact me</h1>
+        <div class="contact-infos">
+            <div class="infos">
+                <h2>Get in touch</h2>
+                <p style="width: 400px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolorum quas nisi laborum commodi cupiditate veniam quam labore, molestiae minima doloribus?</p>
+                <div class="name">
+                    <img src="./imges/user-name.png" alt="user-name">
+                    <div class="name-txt">
+                        <h3>Name</h3>
+                        <p>WIUT Student</p>
+                    </div>
+                </div>
+                <div class="name">
+                    <img src="https://img.icons8.com/color/96/000000/address--v2.png"/>
+                    <div class="name-txt">
+                        <h3>Address</h3>
+                        <p>Istiqbol 12</p>
+                    </div>
+                </div>
+                <div class="email">
+                    <img src="./imges/email-icon.png" alt="user-name">
+                    <div class="name-txt">
+                        <h3>Email</h3>
+                        <p>wiut00011173student@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <h2>Message me</h2>
+                <label>
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="text" name="" id="" placeholder="Email">
+                </label>
+                <input type="text" name="" id="" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+
+                <button class="btn">Send Message</button>
+
+            </form>
+        </div>
+        
+    </section>
+
 </body>
 </html>

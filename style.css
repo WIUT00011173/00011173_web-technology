@@ -15,6 +15,7 @@ html{
     flex-direction: column;
 }
 header{
+    position: fixed;
     width: 100%;
     padding: 40px 50px 0 50px;
     display: flex;
@@ -32,6 +33,9 @@ a{
 }
 
 nav a{
+    border: 1px solid #000;
+    padding: 5px 15px;
+    border-radius: 15px;
     text-decoration: none;
     color: burlywood;
     font-family: 'Gluten', cursive;
@@ -42,7 +46,11 @@ nav a{
 
 nav a:hover{
     color: red;
+    border: 1px solid rgb(180, 164, 164);
 }
+header .menu-icon{
+    display: none;
+} 
 main{
     display: flex;
     align-items: center;
@@ -91,10 +99,12 @@ main div button{
         gap: 20px;
     }
     header nav{
-        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+    }
+    header .menu-icon{
+        display: none;
     }
     main .homepage-text{
         width: 70%;
@@ -159,12 +169,6 @@ main div button{
 .btn:hover{
     border: 1px solid rgb(197, 187, 187);
     background-color: transparent;
-}
-
-
-
-form{
-    display: none;
 }
 
 @media (max-width: 760px){
@@ -265,7 +269,7 @@ article h1{
     text-align: center;
     margin: 40px 0;
     font-size: 50px;
-    font-family: 'Montserrat Alternates', sans-serif;;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 article .skills-container{
     height: 100%;
@@ -276,7 +280,9 @@ article .skills-container{
     justify-content: center;
     gap: 20px;
 }
+
 .skills-container div{
+    overflow: hidden;
     width: 350px;
     height: 272px;
     display: flex;
@@ -287,6 +293,98 @@ article .skills-container{
     padding: 20px;
     background: rgb(25,24,27);
     background: linear-gradient(90deg, rgba(25,24,27,1) 0%, rgba(14,13,13,0.8102591378348214) 64%);
+}
+
+.skills-container div p{
+    text-align: center;
+    transition: .3s;
+}
+
+.skills-container div p:hover, img:hover{
+    transform: scale(1.1);
+}
+
+
+/* contact section */
+
+
+.contact{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: #111;
+}
+
+.contact h1, h2, h3, p, button, input, textarea{
+    font-family: 'Montserrat Alternates', sans-serif;;
+}
+.contact h1, h2, h3{
+    color: #f9004d;
+}
+.contact h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.contact-infos{
+    display: flex;
+    justify-content: space-between;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.infos > div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.name-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+.email img{
+    padding: 10px;
+}
+.email{
+    display: flex;
+    align-items: center;
+}
+.email .name-txt{
+    margin-top: 15px;
+}
+
+textarea{
+    resize: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background: linear-gradient(90deg, rgb(57, 53, 65) 0%, rgba(39, 34, 34, 0.81) 64%);
+}
+form label{
+    display: flex;
+    gap: 20px;
+}
+form label input{
+    border: 1px solid silver;
+    width: 400px;
+    background-color: transparent;
+}
+form input, textarea{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid silver;
+}
+form .btn{
+    width: 200px;
 }
 
 
