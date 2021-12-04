@@ -56,7 +56,7 @@ nav a{
     text-decoration: none;
     color: burlywood;
     font-family: 'Gluten', cursive;
-    font-size: 15x;
+    font-size: 15px;
     margin: 40px 20px 0 0;
     transition: .3s;
 }
@@ -419,7 +419,7 @@ form{
     flex-direction: column;
     gap: 20px;
     padding: 30px;
-    background: linear-gradient(90deg, rgb(57, 53, 65) 0%, rgba(39, 34, 34, 0.81) 64%);
+    background: linear-gradient(90deg, rgba(25,24,27,1) 0%, rgba(32,28,28,0.8102591378348214) 64%);
 }
 form label{
     display: flex;
