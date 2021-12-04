@@ -7,6 +7,21 @@ html{
     scroll-behavior: smooth;
 }
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+
+
 .home-container{
     background-color: #000;
     background-position: center;
@@ -17,10 +32,12 @@ html{
 header{
     position: fixed;
     width: 100%;
-    padding: 40px 50px 0 50px;
+    padding: 0px 50px 0 50px;
     display: flex;
+    background-color: rgb(80, 73, 73);
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 7px;
 }
 
 header h1{
@@ -33,7 +50,7 @@ a{
 }
 
 nav a{
-    border: 1px solid #000;
+    border: 1px solid;
     padding: 5px 15px;
     border-radius: 15px;
     text-decoration: none;
@@ -48,9 +65,48 @@ nav a:hover{
     color: red;
     border: 1px solid rgb(180, 164, 164);
 }
-header .menu-icon{
-    display: none;
-} 
+
+.header{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 25px 25px;
+    transition: all 0.3s ease;
+}
+
+#toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: turquoise;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#toggle::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(-5px);
+    transition: .3s;
+    
+}
+#toggle::after{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(5px);
+    transition: .3s;
+}
+#toggle.active::before{
+    transform: translateY(0) rotate(45deg);
+}
+
 main{
     display: flex;
     align-items: center;
@@ -59,6 +115,7 @@ main{
     background-image: url(./imges/bg.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 main .homepage-text{
@@ -94,21 +151,16 @@ main div button{
 }
 
 @media (max-width: 760px){
-    header{
-        display: block;
-        gap: 20px;
+    .togle{
+        background-color: rgb(223, 211, 211); 
+        display: flex; 
+        flex-direction: column; 
+        gap: 5px; 
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
     }
-    header nav{
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    header .menu-icon{
-        display: none;
-    }
-    main .homepage-text{
-        width: 70%;
-    }
+
     main div button{
         font-size: 10px;
         width: 200px;
@@ -317,7 +369,7 @@ article .skills-container{
 }
 
 .contact h1, h2, h3, p, button, input, textarea{
-    font-family: 'Montserrat Alternates', sans-serif;;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 .contact h1, h2, h3{
     color: #f9004d;
@@ -330,6 +382,7 @@ article .skills-container{
 .contact-infos{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .infos{
     display: flex;
@@ -386,5 +439,80 @@ form input, textarea{
 form .btn{
     width: 200px;
 }
+
+@media (max-width: 950px){
+    .contact-infos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    form > input, textarea{
+        width: 620px;
+    }
+    form label input{
+        width: 300px;
+    }
+}
+@media (max-width: 800px){
+    .contact-infos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    form > input, textarea{
+        width: 520px;
+    }
+    form label input{
+        width: 250px;
+    }
+}
+@media (max-width: 650px){
+    .contact-infos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    form > input, textarea{
+        width: 360px;
+    }
+    form label input{
+        width: 170px;
+    }
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+    background-color: rgb(34, 29, 29);
+}
+footer p, h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+footer p{
+    text-align: center;
+    line-height: 40px;
+}
+footer .social-link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-bottom{
+    display: block;
+    background-color: #000;
+    width: 99.3vw;
+    text-align: center;
+    padding: 25px 0;
+}
+.footer-bottom p{
+    font-size: 15px;
+}
+
 
 
