@@ -5,34 +5,42 @@
         <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" type="text/css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="./app.js"></script>
+        <script src="app.js"></script>
         <title>Personal Website</title>
 </head>
 <body class="body">
     <div class="home-container">
-        <header class="header">
+
+        <header class="header" id="header">
+
         <h1>FayzKhan_<span style="color: blueviolet;">Dev</span></h1>
-        <nav class="nav">
+        
+        <nav id="nav">
+        
             <a href="#">Home</a>
             <a href="#About-container">About</a>
             <a href="#skills">Skills</a>
             <a href="#services">Sevices</a>
             <a href="#cantact">Hire Me</a>
-        </nav>
+            <a href="#Social links">Social links</a>
         
+        </nav>
         <div id="toggle"></div>
+
         </header>
 
     
         <main>
         
             <div class="homepage-text">
+                <p style="margin-top: 70px;"><span style="color: red;">Disclaimer:</span> This website was created to fulfill Web Technology module’s
+                requirements and does not represent an actual company or service</p>
                 <h1>I am 00011173 <span style="color: red;">WIUT</span> Student</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nemo officia quibusdam beatae hic!</p>
                 <button>Download my Resume</button>
             </div>
 
-            </main>
+        </main>
 
 
     </div>
@@ -49,11 +57,24 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex sequi soluta quam, deserunt illo optio doloremque ducimus ipsam delectus architecto eos amet, iusto dolore ut incidunt molestias? Vitae, provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, perferendis neque mollitia at, nam laboriosam eaque autem, suscipit illum ea quisquam temporibus! Illo delectus aliquam ipsam, fugit ullam ipsum maiores!</p>
 				<button class="btn" type="button">Let's Talk</button>
 			</div>
+            <div class="edu">
+                <h5>Education</h5> <br>
+                <figure>
+
+                    <img style="width: 425px;" src="./imges/edu.png" alt="">
+                    <figcaption>
+                        <p>Westminster International University In Tashkent</p>
+                        <p> Business Information Systems</p> <br>
+                        <span>2020-2024</span>
+                    </figcaption>
+                </figure>
+            </div>
 		</div>
 
     </section>
 
     <!-- Service section -->
+
     <section class="services" id="services">
         <h2 class="title">My services</h2>
         <div class="max-width">
@@ -140,25 +161,26 @@
                     </div>
                 </div>
             </div>
-            <form>
+            <form id="form">
                 <h2>Message me</h2>
                 <label>
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="text" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="Name" placeholder="Name" required>
+                    <input type="text" name="" id="Email" placeholder="Email" required>
                 </label>
-                <input type="text" name="" id="" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                <input type="text" name="" id="Subject" placeholder="Subject">
+                <textarea name="" id="Message" cols="30" rows="5" placeholder="Message" required></textarea>
 
-                <button class="btn">Send Message</button>
+                <button class="btn" type="submit" value="Register">Send Message</button>
 
             </form>
+            
         </div>
         
     </section>
 
     <!-- footer -->
 
-    <footer>
+    <footer id="Social links">
         <h2>WIUT Student</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere error <br>
         blanditiis impedit non corrupti amet.</p>
@@ -166,12 +188,15 @@
             <a href="https://www.facebook.com/wiut.uz/" target="_blank"><img style="width: 35px;" src="./imges/fb-icon.png" alt=""></a>
             <a href="https://twitter.com/westminsteredu"><img style="width: 35px;" src="./imges/twitter.png" alt=""></a>
             <a href="mailto:wiut00011173student@gmail.com"><img style="width: 35px;" src="./imges/gmail.png" alt=""></a>
-            <a href="https://www.linkedin.com/school/westminster-uni/"><img style="width: 35px;" src="./imges/in.png" alt=""></a>
+            <a href="https://www.linkedin.com/school/westminster-uni/"><img style="width: 40px;" src="./imges/in.png" alt=""></a>
+            <a href="https://t.me/wiut_official_telegram"><img style="width: 40px;" src="./imges/tg.png" alt=""></a>
         </div>
         <div class="footer-bottom">
             <p>Copyright &copy;2021 Web Technology</p>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
