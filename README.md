@@ -5,10 +5,15 @@ In the Home section you can find entrance to website.
 About=> Info about Developer.
 Skills=> Technologies developer knows
 Services=> offers from developer
-Hire me=> Ways to contact to developer
+Hire me=> Ways to contact to developer.
+At the end, footer that includes links.
 
 You can find hosted website in the link below:
 
 https://wiut00011173.github.io/00011173_web-technology/
+
+HERE IS THE LINK TO GITHUB REPOSITORY:
+
+https://github.com/WIUT00011173/00011173_web-technology
 
 Feel free to fork this project and customize with your personal info. If you implement any nice features or improvements I'd really appreciate

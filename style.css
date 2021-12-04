@@ -110,7 +110,7 @@ nav a:hover{
 main{
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-image: url(./imges/bg.jpg);
     background-position: center;
