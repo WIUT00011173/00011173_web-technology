@@ -1,3 +1,5 @@
+// Responsive navbar:
+
 var togle = document.getElementById('toggle');
 var navbar = document.getElementById('nav');
 var header = document.getElementById('header');
@@ -9,13 +11,21 @@ document.onclick = function(e){
   }
 }
 
-
-
-
 togle.onclick = function() {
   togle.classList.toggle('active');
   navbar.classList.toggle('active');
 };
+
+
+// header effect when scrolling:
+
+window.addEventListener('scroll', function () {
+  let header = document.querySelector('header');
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle('scrolling-active', windowPosition);
+})
+
+// Getting form input values:
 
 var form = document.getElementById('form')
 
