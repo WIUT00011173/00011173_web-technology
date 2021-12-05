@@ -200,7 +200,7 @@ nav a:hover{
 
 .scrolling-active{
     background-color: #110824;
-    border-bottom: 2px solid rgba(255,255,255,.05);
+    border-bottom: 2px solid rgba(255,255,255,.2);
     transition: height .5s ease;
     box-shadow: 20px 10px 5rem rgba(133, 27, 27, 0.2);
 }
