@@ -14,6 +14,14 @@ Hire me=> Ways to contact to developer.
 
 At the end, footer that includes links.
 
+Some extenal links used for fonts (google fonts), here is the link to external sources:
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" type="text/css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" type="text/css" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" type="text/css" rel="stylesheet">
+
 You can find hosted website in the link below:
 
 https://wiut00011173.github.io/00011173_web-technology/

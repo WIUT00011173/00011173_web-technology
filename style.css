@@ -3,20 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
+
 ::selection{
   background: rgb(0,123,255,0.3);
 }
@@ -29,6 +34,7 @@ html{
     display: flex;
     flex-direction: column;
 }
+
 header{
     height: 10vh;
     position: fixed;
@@ -49,6 +55,7 @@ header h1{
 a{
     text-decoration: none;
 }
+
 nav{
     height: 100%;
     display: flex;
@@ -56,6 +63,7 @@ nav{
     gap: 30px;
     transition: .4s;
 }
+
 nav a{
     letter-spacing: 2px;
     border: 1px solid;
@@ -94,6 +102,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
 }
+
 #toggle::before{
     content: '';
     position: absolute;
@@ -104,6 +113,7 @@ nav a:hover{
     transition: .3s;
     
 }
+
 #toggle::after{
     content: '';
     position: absolute;
@@ -113,10 +123,12 @@ nav a:hover{
     transform: translateY(5px);
     transition: .3s;
 }
+
 #toggle.active::before{
     background-color: red;
     transform: translateY(0) rotate(45deg);
 }
+
 #toggle.active::after{
     background-color: red;
     transform: translateY(0) rotate(-45deg);
@@ -138,6 +150,7 @@ nav a:hover{
     #toggle{
         display: flex;
     }
+
     nav{
         position: fixed;
         bottom: 0;
@@ -150,12 +163,14 @@ nav a:hover{
         align-items: center;
         height: calc(100vh - 10vh);
     }
+
     #nav.active{
         background-color: chocolate;
         height: calc(100vh - 12.7vh);        
         bottom: 0;
         right: 0;
     }
+
 }
 
 @media (max-width: 990px){
@@ -171,13 +186,16 @@ nav a:hover{
         align-items: center;
         height: calc(100vh - 10vh);
     }
+
     #nav.active{
         background-color: #201c1c;
         height: calc(100vh - 12.7vh);        
         bottom: 0;
         right: 0;
     }
+
 }
+
 /* Styles when scroll:  */
 
 .scrolling-active{
@@ -232,6 +250,7 @@ main div button{
     .homepage-text{
         font-size: 15px;
     }
+
     main div button{
         font-size: 10px;
         width: 200px;
@@ -242,10 +261,12 @@ main div button{
         background-color: rgba(179, 185, 255, 0.24);
         border: 1px solid black;
     }
+
 }
 
 
 /*---about-section---*/
+
 .About-container{
     height: 100%;
 	width: 100%;
@@ -259,11 +280,13 @@ main div button{
     background-repeat: repeat;
     padding: 0 50px;
 }
+
 .About-container > h2{
     margin-top: 60px;
     font-family: 'Montserrat Alternates', sans-serif;
     color: rgb(255, 35, 35);
 }
+
 .about-main{
     width: 100%;
     display: flex;
@@ -279,29 +302,35 @@ main div button{
     font-family: 'Montserrat Alternates', sans-serif;
 	width: 550px;
 }
+
 .about-text > h5, .edu > h5{
     color: blanchedalmond;
     font-size: 20px;
     
 }
+
 .about-text h5 span{
     color: blueviolet;
 }
+
 figure {
     overflow: hidden;
     display: inline-block;
     border: 1px dotted gray;
     margin-bottom: 100px; /* adjust as needed */
 }
+
 figure img {
     transition: .3s;
     vertical-align: top;
 }
+
 figure figcaption {
     padding: 10px;
     border: 1px dotted blue;
     text-align: center;
 }
+
 figure figcaption span{
     font-family: 'Montserrat Alternates', sans-serif;;
     font-size: 15px;
@@ -320,6 +349,7 @@ figure figcaption span{
     transition: .4s;
     margin-bottom: 40px;
 }
+
 .btn:hover{
     border: 1px solid rgb(197, 187, 187);
     background-color: transparent;
@@ -333,36 +363,44 @@ figure figcaption span{
         display: flex;
         flex-wrap: wrap;
     }
+
     .about-text{
         display: block;
         margin: 0 auto;
         width: 500px;
         font-size: smaller;
     }
+
     .edu{
         display: block;
         margin: 0 auto;
     }
+
 }
+
 @media (max-width: 600px){
     .About-container .about-main{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
+
     .about-text{
         display: block;
         margin: 0 auto;
         width: 350px;
         font-size: smaller;
     }
+
     .edu{
         display: block;
         margin: 0 auto;
     }
+
 }
 
 /* services */
+
 .services{
     height: 100%;
     display: flex;
@@ -370,6 +408,7 @@ figure figcaption span{
     align-items: center;
     justify-content: space-evenly;
 }
+
 .services h2{
     margin: 100px 0;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -378,20 +417,24 @@ figure figcaption span{
     justify-self: center;
     align-self: center;
 }
+
 .services{
     padding: 0 30px;
     font-family: 'Montserrat Alternates', sans-serif;
     color:#fff;
     background: #111;
 }
+
 .services .title::before,
 .teams .title::before{
     background: #fff;
 }
+
 .services .title::after,
 .teams .title::after{
     background: #111;
 }
+
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -401,12 +444,15 @@ figure figcaption span{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover{
     background: crimson;
 }
+
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
@@ -415,6 +461,7 @@ figure figcaption span{
 .services .serv-content .card:hover i{
     color: #fff;
 }
+
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
@@ -437,6 +484,7 @@ figure figcaption span{
         align-items: center;
         justify-content: center;
     }
+
     .services .serv-content .card{
         width: 300px;
     }
@@ -451,6 +499,7 @@ article{
     background-size: cover;
     padding: 30px;
 }
+
 article h1{
     color: red;
     text-align: center;
@@ -458,6 +507,7 @@ article h1{
     font-size: 50px;
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
 article .skills-container{
     height: 100%;
     width: 100%;
@@ -506,42 +556,51 @@ article .skills-container{
 .contact h1, h2, h3, p, button, input, textarea{
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
 .contact h1, h2, h3{
     color: #f9004d;
 }
+
 .contact h1{
     text-align: center;
     font-size: 50px;
     margin-top: 50px;
 }
+
 .contact-infos{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .infos{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .infos > div{
     display: flex;
     gap: 15px;
     align-items: center;
 }
+
 .name-txt{
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
 }
+
 .email img{
     padding: 10px;
 }
+
 .email{
     display: flex;
     align-items: center;
 }
+
 .email .name-txt{
     margin-top: 15px;
 }
@@ -549,6 +608,7 @@ article .skills-container{
 textarea{
     resize: none;
 }
+
 form{
     display: flex;
     flex-direction: column;
@@ -556,6 +616,7 @@ form{
     padding: 30px;
     background: linear-gradient(90deg, rgba(25,24,27,1) 0%, rgba(32,28,28,0.8102591378348214) 64%);
 }
+
 form label{
     display: flex;
     gap: 20px;
@@ -567,6 +628,7 @@ form label input{
     width: 400px;
     background-color: transparent;
 }
+
 form input, textarea{
     color: blanchedalmond;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -575,6 +637,7 @@ form input, textarea{
     background-color: transparent;
     border: 1px solid silver;
 }
+
 form .btn{
     width: 200px;
 }
@@ -585,35 +648,43 @@ form .btn{
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     form > input, textarea{
         width: 620px;
     }
+
     form label input{
         width: 300px;
     }
 }
+
 @media (max-width: 800px){
     .contact-infos{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     form > input, textarea{
         width: 520px;
     }
+
     form label input{
         width: 250px;
     }
 }
+
 @media (max-width: 650px){
     .contact-infos{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     form > input, textarea{
         width: 360px;
     }
+
     form label input{
         width: 170px;
     }
@@ -630,18 +701,22 @@ footer{
     padding-top: 30px;
     background-color: rgb(34, 29, 29);
 }
+
 footer p, h2{
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
 footer p{
     text-align: center;
     line-height: 40px;
 }
+
 footer .social-link{
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 .footer-bottom{
     display: block;
     background-color: #000;
@@ -649,6 +724,7 @@ footer .social-link{
     text-align: center;
     padding: 25px 0;
 }
+
 .footer-bottom p{
     font-size: 15px;
 }
