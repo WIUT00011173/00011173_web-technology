@@ -16,11 +16,11 @@ At the end, footer that includes links.
 
 Some extenal links used for fonts (google fonts), here is the link to external sources:
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" type="text/css" rel="stylesheet">
+https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
 
-<link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" type="text/css" rel="stylesheet">
+https://fonts.googleapis.com/css2?family=Gluten&display=swap
 
- <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" type="text/css" rel="stylesheet">
+https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
 
 You can find hosted website in the link below:
 
